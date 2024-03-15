@@ -30,26 +30,25 @@ int main (){
         printf("Vou tentar achar sua senha... \n");
 
         tentativa = 0;
+        if(tentativa == senha){
+            printf("Senha encontrada: %d\n", tentativa);
+            break;
+        }
 
-        while (senha != tentativa || senha == 0)
+        while (senha != tentativa)
         {
-
-            if (senha == 0){
-                printf("Senha encontrada: %d\n", 0);
-                break;
-            }
-
+            
             tentativa++; 
 
             printf("Senha: %d\n", tentativa);
-
+            
             //SE ENCONTRAR SENHA//
             if (tentativa == senha) 
             {
                 printf("Senha encontrada: %d\n", tentativa);
                 break;
             }
-         
+                     
         }
 
         //Se deseja testar novamente//
