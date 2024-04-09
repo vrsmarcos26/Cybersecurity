@@ -146,10 +146,10 @@ int main(){
 
                 if (capital == 0){
                     //MIN
-                    if (pressshift)
                     key = tolower(key);
                     fprintf(arquivo, "%c", key);
                 } else {
+                    if (pressshift)
                     //MAIUS
                     fprintf(arquivo, "%c", key);
                 }
